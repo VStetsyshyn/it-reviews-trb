@@ -4,7 +4,7 @@ class CreateBooks < ActiveRecord::Migration[6.0]
       t.string :author, null: false
       t.string :title, null: false
       t.string :publisher
-      t.string :categories
+      t.string :category
 
       t.timestamps
     end
