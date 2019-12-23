@@ -21,6 +21,7 @@ Style/Documentation:
 Style/SignalException:
   Exclude:
     - app/concepts/user/operation/*
+    - app/concepts/book/operation/*
 Lint/UnreachableCode:
   Description: 'Unreachable code.'
   Enabled: false

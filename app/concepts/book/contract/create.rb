@@ -13,7 +13,7 @@ class Book < ApplicationRecord
         required(:author).filled
       end
 
-      validation :unique_title_for_author, if: :default, with: {form: true} do
+      validation :unique_title_for_author, if: :default, with: { form: true } do
         configure do
           config.messages_file = './config/errors.yml'
 
