@@ -2,8 +2,8 @@
 
 class User < ApplicationRecord
   module Operation
-    class Create < Trailblazer::Operation
-      class Present < Trailblazer::Operation
+    class Create < OperationBase
+      class Present < OperationBase
         step Model(User, :new)
         step self::Contract::Build(constant: User::Contract::Create)
       end
@@ -23,11 +23,6 @@ class User < ApplicationRecord
             activation_token: options['model'].activation_token
           )
         end
-      end
-
-      def handle_errors!(options, **)
-        details = options['contract.default'].errors.messages
-        options[:errors] = "Validation failed: #{details}"
       end
 
       def send_email!(_options, params:, **)
