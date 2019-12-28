@@ -78,6 +78,7 @@ GEM
     coderay (1.1.2)
     concurrent-ruby (1.1.5)
     crass (1.0.4)
+    database_cleaner (1.7.0)
     declarative (0.0.10)
     declarative-builder (0.1.0)
       declarative-option (< 0.2.0)
@@ -123,6 +124,7 @@ GEM
     ffi (1.11.1)
     globalid (0.4.2)
       activesupport (>= 4.2.0)
+    hashie (4.0.0)
     i18n (1.6.0)
       concurrent-ruby (~> 1.0)
     inflecto (0.0.2)
@@ -288,6 +290,8 @@ GEM
       railties (>= 4.0.0)
       trailblazer (>= 2.1.0.beta1, < 2.2.0)
       trailblazer-loader (>= 0.1.0)
+    trailblazer-test (0.1.0)
+      hashie
     turbolinks (5.2.1)
       turbolinks-source (~> 5.2)
     turbolinks-source (5.2.0)
@@ -323,6 +327,7 @@ DEPENDENCIES
   bootsnap (>= 1.4.2)
   byebug
   capybara (>= 2.15)
+  database_cleaner (~> 1.7)
   dry-matcher (~> 0.8.2)
   dry-validation (= 0.11.1)
   jbuilder (~> 2.7)
@@ -344,6 +349,7 @@ DEPENDENCIES
   spring-watcher-listen (~> 2.0.0)
   trailblazer (~> 2.1.0.rc13)
   trailblazer-rails (= 2.1.7)
+  trailblazer-test (~> 0.1.0)
   turbolinks (~> 5)
   tzinfo-data
   web-console (>= 3.3.0)

@@ -43,6 +43,7 @@ group :development, :test do
   # and get a debugger console
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
   gem 'rspec-rails', '~> 3.8'
+  gem 'trailblazer-test', '~> 0.1.0'
 end
 
 group :development do
@@ -54,6 +55,8 @@ group :development do
   # in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+
+  gem 'database_cleaner', '~> 1.7'
 end
 
 group :test do
